@@ -77,7 +77,18 @@ export default defineComponent({
       };
     },
     async handleImage(image) {
-      const { imageId, imageUrl } = await this.processImage(image);
+      const { imageId, imageUrl } = await this.processImage(image).catch(
+        (err) => {
+          console.log("Error processing image: ", err);
+          return {
+            imageId: undefined,
+            imageUrl: undefined,
+          };
+        }
+      );
+      if (!imageId || !imageUrl) {
+        return;
+      }
       this.imageUrlMap[imageId] = imageUrl;
       this.previewImage(image, imageId);
     },
