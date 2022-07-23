@@ -2,7 +2,7 @@
 
 A simple UI component to upload images to a remote server, created with Vue 3.
 
-A common approach to handle images is to store them on a separate database and then store the URL to access the image and other data on a different database. This component is designed specifically for that use case.
+A common approach to handle images is to store them on a database and then store the URL to access the image and other data on a different database. This component is designed specifically for that use case.
 
 ## Features
 
@@ -61,6 +61,10 @@ handleUpdatedUrls(urlsList) {
 ## Example Result
 
 https://user-images.githubusercontent.com/25933120/180596474-0a050fe2-1667-4dc5-a9cc-8ade86a60d8e.mov
+
+## Improvement
+
+We plan to bundle the Vue components so that this package can be used directly in browser.
 
 ## Contributing
 

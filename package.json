@@ -6,10 +6,17 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/developeers/v-upload-image.git"
+  },
   "keywords": [
-    "Vue",
-    "3"
+    "Vue 3"
   ],
   "author": "Hieu Chu (minhieuchu@gmail.com)",
-  "license": "MIT"
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/developeers/v-upload-image/issues"
+  },
+  "homepage": "https://github.com/developeers/v-upload-image#readme"
 }
